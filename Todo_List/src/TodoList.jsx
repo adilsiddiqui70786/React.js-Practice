@@ -20,7 +20,6 @@ export default function TodoList() {
 	let deleteTodo = (id) => {
 		setTodos((prevTodos) => todos.filter((prevTodos) => prevTodos.id != id));
 	};
-
 	return (
 		<div>
 			<input
