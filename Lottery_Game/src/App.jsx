@@ -1,9 +1,10 @@
 import "./App.css";
+import Lottery from "./Lottery";
 
 function App() {
 	return (
 		<>
-			<h1>Lottery Game</h1>
+			<Lottery />
 		</>
 	);
 }
