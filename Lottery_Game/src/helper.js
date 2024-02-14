@@ -8,4 +8,8 @@ function generateTicketNumber(n) {
 	return arr;
 }
 
-export { generateTicketNumber };
+function sum(arr) {
+	return arr.reduce((sum, curr) => sum + curr, 0);
+}
+
+export { generateTicketNumber, sum };
