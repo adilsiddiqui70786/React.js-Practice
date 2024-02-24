@@ -18,10 +18,11 @@ function Form() {
 
 	let handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(formData);
+		// console.log(formData);
 		setFormData({
 			fullName: "",
 			username: "",
+			password: "",
 		});
 	};
 
@@ -47,6 +48,19 @@ function Form() {
 				id="username"
 				onChange={handleInputChange}
 				name="username"
+			/>
+			<button>Submit</button>
+
+			<br />
+			<br />
+			<label htmlFor="password">Password: </label>
+			<input
+				type="text"
+				placeholder="enter password"
+				value={formData.password}
+				id="password"
+				onChange={handleInputChange}
+				name="password"
 			/>
 			<button>Submit</button>
 		</form>
